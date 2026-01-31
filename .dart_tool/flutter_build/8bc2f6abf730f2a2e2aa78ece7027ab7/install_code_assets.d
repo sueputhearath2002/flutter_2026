@@ -1,0 +1,1 @@
+ /Users/macbook/Desktop/basic_flutter/.dart_tool/flutter_build/8bc2f6abf730f2a2e2aa78ece7027ab7/native_assets.json: 
