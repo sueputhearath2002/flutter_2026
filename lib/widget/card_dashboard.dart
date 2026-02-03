@@ -9,11 +9,13 @@ class CardDashboard extends StatelessWidget {
     required this.title,
     required this.description,
     this.isShowButton = false,
+    this.onClick,
   });
   final String image;
   final String title;
   final String description;
   final bool isShowButton;
+  final VoidCallback? onClick;
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +65,7 @@ class CardDashboard extends StatelessWidget {
             Spacer(),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 26),
-              child: ButtonCus(buttonName: "Let's Start", onPressed: () {}),
+              child: ButtonCus(buttonName: "Let's Start", onPressed: onClick),
             ),
           ],
           SizedBox(height: 60),

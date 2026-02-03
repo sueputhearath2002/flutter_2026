@@ -10,3 +10,7 @@ const String blueBackground5 = "assets/images/bubble 01 (5).png";
 const String greyBackground4 = "assets/images/bubble 02 (3).png";
 const String helloCard1 =
     "assets/images/71838C20-3BF0-4ACB-92D4-F30E0CF43659.png";
+const String scanPng = "assets/images/Icon.png";
+const String filterPng = "assets/images/Icon (1).png";
+const String settingPng = "assets/images/Frame.png";
+const String arrowPng = "assets/images/Arrow.png";

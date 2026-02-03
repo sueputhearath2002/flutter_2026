@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         dividerTheme: DividerThemeData(color: Colors.transparent),
         scaffoldBackgroundColor: whiteColor,
+        appBarTheme: AppBarTheme(backgroundColor: whiteColor),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: StarterScreen(),
