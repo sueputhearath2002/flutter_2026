@@ -5,15 +5,21 @@ import 'package:flutter_svg/flutter_svg.dart';
 class CircleButton extends StatelessWidget {
   const CircleButton({
     super.key,
-    required this.iconSvg,
+    this.iconImage = "",
+    this.svgIcon = "",
     this.onPressed,
     this.bgColor = grey30Color,
     this.isShowBadg = false,
+    this.width = 40,
+    this.height = 40,
   });
-  final String iconSvg;
+  final String iconImage;
   final VoidCallback? onPressed;
   final Color bgColor;
   final bool isShowBadg;
+  final double width;
+  final double height;
+  final String svgIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +33,24 @@ class CircleButton extends StatelessWidget {
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
             shape: const CircleBorder(),
-            minimumSize: Size(45, 45),
+            minimumSize: Size(width, height),
             padding: EdgeInsets.zero,
             backgroundColor: bgColor,
           ),
-          child: Image.asset(iconSvg),
+          child: svgIcon.isNotEmpty
+              ? SvgPicture.asset(
+                  svgIcon,
+                  width: width * 0.4,
+                  height: height * 0.4,
+                  colorFilter: ColorFilter.mode(whiteColor, BlendMode.srcIn),
+                  fit: BoxFit.contain,
+                )
+              : Image.asset(
+                  iconImage,
+                  width: width * 0.4,
+                  height: height * 0.4,
+                  fit: BoxFit.contain,
+                ),
         ),
       ),
     );

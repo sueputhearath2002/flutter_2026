@@ -14,3 +14,10 @@ const String scanPng = "assets/images/Icon.png";
 const String filterPng = "assets/images/Icon (1).png";
 const String settingPng = "assets/images/Frame.png";
 const String arrowPng = "assets/images/Arrow.png";
+const String storiePng =
+    "assets/images/BFC6A77A-C42F-4C07-A26D-E5583E7DD7B6.png";
+const String playPng = "assets/images/play.png";
+
+//===================svg
+
+const String playSvg = "assets/svg/play-1000-svgrepo-com.svg";

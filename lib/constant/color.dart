@@ -7,3 +7,4 @@ const Color textColor = Colors.black87;
 const Color greyColor = Colors.grey;
 const Color orageColor = Colors.deepOrangeAccent;
 const Color pinkColor = Colors.pink;
+const Color greenColor = Colors.green;

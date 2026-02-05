@@ -25,7 +25,7 @@ class ProfileWidget extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.black12,
-            blurRadius: 24,
+            blurRadius: 12,
             offset: Offset(0, 3),
           ),
           // BoxShadow(color: Colors.black12),

@@ -18,6 +18,12 @@ class _PasswordTypeScreenState extends State<PasswordTypeScreen> {
 
   String correctPassword = "12345678";
 
+  @override
+  void initState() {
+    _controller.text = correctPassword;
+    super.initState();
+  }
+
   void _onPinComplete(String pin) {
     setState(() {
       if (pin.length < PasswordTypeScreen.pinLenth) {
