@@ -9,10 +9,12 @@ class HeaderTitle extends StatelessWidget {
     required this.label,
     this.child,
     this.rightLabel = "",
+    this.rightChild,
   });
   final String label;
   final Widget? child;
   final String rightLabel;
+  final Widget? rightChild;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class HeaderTitle extends StatelessWidget {
               label,
               style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),
             ),
-            if (rightLabel.isNotEmpty)
+            if (rightLabel.isNotEmpty) ...[
               Row(
                 spacing: 4,
                 children: [
@@ -42,6 +44,9 @@ class HeaderTitle extends StatelessWidget {
                   ),
                 ],
               ),
+            ] else ...[
+              rightChild ?? SizedBox.shrink(),
+            ],
           ],
         ),
         child ?? SizedBox.shrink(),

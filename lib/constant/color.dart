@@ -8,3 +8,5 @@ const Color greyColor = Colors.grey;
 const Color orageColor = Colors.deepOrangeAccent;
 const Color pinkColor = Colors.pink;
 const Color greenColor = Colors.green;
+const Color pink100Color = Color(0xFFF81140);
+const Color pink30Color = Color(0xFFFF5790);

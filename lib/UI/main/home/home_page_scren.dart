@@ -1,5 +1,6 @@
 import 'package:basic_flutter/UI/main/home/components/categories.dart'
     show Categories;
+import 'package:basic_flutter/UI/main/home/components/flash_sales.dart';
 import 'package:basic_flutter/UI/main/home/components/most_popular.dart';
 import 'package:basic_flutter/UI/main/home/components/new_item.dart';
 import 'package:basic_flutter/constant/color.dart';
@@ -58,6 +59,7 @@ class HomePageScren extends StatelessWidget {
               NewItem(),
               MostPopular(),
               Categories(),
+              FlashSales(),
             ],
           ),
         ],
