@@ -21,3 +21,8 @@ const String playPng = "assets/images/play.png";
 //===================svg
 
 const String playSvg = "assets/svg/play-1000-svgrepo-com.svg";
+const String homeSvg = "assets/svg/home-svgrepo-com.svg";
+const String favoriteSvg = "assets/svg/favorite-svgrepo-com.svg";
+const String historySvg = "assets/svg/menu-board-svgrepo-com.svg";
+const String cartSvg = "assets/svg/cart-3-svgrepo-com.svg";
+const String profileSvg = "assets/svg/profile-svgrepo-com.svg";

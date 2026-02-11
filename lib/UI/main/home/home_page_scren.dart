@@ -3,6 +3,7 @@ import 'package:basic_flutter/UI/main/home/components/categories.dart'
 import 'package:basic_flutter/UI/main/home/components/flash_sales.dart';
 import 'package:basic_flutter/UI/main/home/components/most_popular.dart';
 import 'package:basic_flutter/UI/main/home/components/new_item.dart';
+import 'package:basic_flutter/UI/main/home/components/top_product.dart';
 import 'package:basic_flutter/constant/color.dart';
 import 'package:basic_flutter/constant/image.dart';
 import 'package:basic_flutter/widget/circle_button.dart';
@@ -60,6 +61,7 @@ class HomePageScren extends StatelessWidget {
               MostPopular(),
               Categories(),
               FlashSales(),
+              TopProduct(),
             ],
           ),
         ],

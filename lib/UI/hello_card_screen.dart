@@ -1,4 +1,5 @@
 import 'package:basic_flutter/UI/main/home/home_page_scren.dart';
+import 'package:basic_flutter/UI/main/main_screen.dart';
 import 'package:basic_flutter/constant/color.dart';
 import 'package:basic_flutter/constant/image.dart';
 import 'package:basic_flutter/widget/card_dashboard.dart';
@@ -92,7 +93,7 @@ class _HelloCardScreenState extends State<HelloCardScreen> {
                           onClick: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => HomePageScren(),
+                              builder: (context) => MainScreen(),
                             ),
                           ),
                         );

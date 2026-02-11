@@ -1,3 +1,4 @@
+import 'package:basic_flutter/UI/main/main_screen.dart';
 import 'package:basic_flutter/UI/starter_screen.dart';
 import 'package:basic_flutter/basic_widget/list_view_builder_widget.dart';
 import 'package:basic_flutter/basic_widget/scaffold_widget.dart';
