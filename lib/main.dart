@@ -1,7 +1,5 @@
-import 'package:basic_flutter/UI/main/main_screen.dart';
+import 'package:basic_flutter/UI/main/fetch_api_screen.dart';
 import 'package:basic_flutter/UI/starter_screen.dart';
-import 'package:basic_flutter/basic_widget/list_view_builder_widget.dart';
-import 'package:basic_flutter/basic_widget/scaffold_widget.dart';
 import 'package:basic_flutter/constant/color.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +20,8 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(backgroundColor: whiteColor),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: StarterScreen(),
+      home: FetchApiScreen(),
+      // StarterScreen(),
       // ListViewBuilderWidet(),
       // CardWidget(),
       // \ListviewWidget(),
