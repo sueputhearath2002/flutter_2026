@@ -6,7 +6,8 @@ import 'package:http/http.dart' as http;
 class FechApi {
   //  https://api.escuelajs.co/api/v1/products?offset=1&limit=100
 
-  static Future<List<ProductModel>> fetchProduct(int offset) async {
+  Future<List<ProductModel>> fetchProduct(int offset) async {
+    print("========================${offset}");
     int limit = 10;
     final url = Uri.parse(
       "https://api.escuelajs.co/api/v1/products?offset=$offset&limit=$limit",

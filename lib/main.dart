@@ -1,3 +1,4 @@
+import 'package:basic_flutter/UI/main/fetch_api_pagination.dart';
 import 'package:basic_flutter/UI/main/fetch_api_screen.dart';
 import 'package:basic_flutter/UI/starter_screen.dart';
 import 'package:basic_flutter/constant/color.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(backgroundColor: whiteColor),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: FetchApiScreen(),
+      home: FetchApiPagination(),
+      // FetchApiScreen(),
       // StarterScreen(),
       // ListViewBuilderWidet(),
       // CardWidget(),
