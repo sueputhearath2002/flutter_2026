@@ -1,10 +1,13 @@
+import 'package:basic_flutter/UI/main/crud_firebase/get_user_screen.dart';
 import 'package:basic_flutter/UI/main/fetch_api_pagination.dart';
-import 'package:basic_flutter/UI/main/fetch_api_screen.dart';
-import 'package:basic_flutter/UI/starter_screen.dart';
 import 'package:basic_flutter/constant/color.dart';
+import 'package:basic_flutter/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -21,7 +24,8 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(backgroundColor: whiteColor),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: FetchApiPagination(),
+      home: GetUserScreen(),
+      // FetchApiPagination(),
       // FetchApiScreen(),
       // StarterScreen(),
       // ListViewBuilderWidet(),

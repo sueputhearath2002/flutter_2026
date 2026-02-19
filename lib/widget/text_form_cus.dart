@@ -7,14 +7,17 @@ class TextFormCus extends StatelessWidget {
     required this.hintText,
     this.suffixIcon,
     this.preffixIcon,
+    this.controller,
   });
   final String hintText;
   final Widget? suffixIcon;
   final Widget? preffixIcon;
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
         filled: true,

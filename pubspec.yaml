@@ -40,6 +40,9 @@ dependencies:
   carousel_slider: ^5.1.2
   http: ^1.6.0
   cached_network_image: ^3.4.1
+  firebase_core: ^4.4.0
+  dropdown_flutter: ^1.0.3
+  cloud_firestore: ^6.1.2
 
 dev_dependencies:
   flutter_test:
