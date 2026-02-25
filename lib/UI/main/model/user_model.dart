@@ -1,11 +1,13 @@
 class UserModel {
-  int name;
+  String id;
+  String name;
   String gender;
   String age;
-  int address;
+  String address;
   String picture;
 
   UserModel({
+    required this.id,
     required this.name,
     required this.gender,
     required this.age,
@@ -13,7 +15,8 @@ class UserModel {
     required this.picture,
   });
 
-  factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
+  factory UserModel.fromJson(String id,Map<String, dynamic> json) => UserModel(
+    id: id,
     name: json["name"] ?? "",
     gender: json["gender"] ?? "",
     age: json["age"] ?? "",
