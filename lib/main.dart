@@ -1,13 +1,16 @@
 import 'package:basic_flutter/UI/main/crud_firebase/get_user_screen.dart';
-import 'package:basic_flutter/UI/main/fetch_api_pagination.dart';
 import 'package:basic_flutter/constant/color.dart';
 import 'package:basic_flutter/firebase_options.dart';
+import 'package:basic_flutter/local_notification.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
+  await NotificationService.init();
+
   runApp(const MyApp());
 }
 
