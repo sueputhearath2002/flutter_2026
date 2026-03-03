@@ -1,3 +1,4 @@
+import 'package:basic_flutter/main.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 
@@ -30,23 +31,38 @@ class NotificationService {
     OneSignal.Debug.setLogLevel(OSLogLevel.verbose);
     OneSignal.initialize("84606a32-81cc-4da7-8915-12aaece316e3");
     OneSignal.Notifications.requestPermission(false);
+
     OneSignal.Notifications.addClickListener((event) {
-      print('OneSignal notification clicked: $event');
+      final screen = event.notification.additionalData?["screen"] as String?;
+      final id = event.notification.additionalData?["id"] as String?;
+
+      _handleNavigatoion(screen, arguments: id);
     });
 
     OneSignal.Notifications.addForegroundWillDisplayListener((event) {
-      event.preventDefault(); // Stop OneSignal from showing its own UI
+      // final id = event.notification.additionalData?["id"] as String?;
+      final screen = event.notification.additionalData?["screen"] as String?;
       showNotification(
         title: event.notification.title,
-        body: event.notification.body ?? 'New notification',
+        body: event.notification.body ?? "",
+        layload: screen,
       );
+      print("=================print");
     });
+  }
+
+  static void _handleNavigatoion(String? screen, {String? arguments}) {
+    if (screen == null) return;
+    navigatorKey.currentState?.pushNamed(screen, arguments: arguments);
+    // Navigator.pushNamed("/detail" arguments: arguments);
+    //Navigator.push(context,Materail.....)
   }
 
   static Future showNotification({
     int id = 0,
     String? title,
     String body = 'This is a notification',
+    String? layload,
   }) async {
     const androidDetails = AndroidNotificationDetails(
       'basic_id',
@@ -62,7 +78,7 @@ class NotificationService {
       id: id,
       title: title,
       body: body,
-      payload: "",
+      payload: layload,
       notificationDetails: NotificationDetails(
         android: androidDetails,
         iOS: iosDetails,
