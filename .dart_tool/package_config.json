@@ -8,6 +8,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "archive",
+      "rootUri": "file:///Users/macbook/.pub-cache/hosted/pub.dev/archive-4.0.9",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "args",
       "rootUri": "file:///Users/macbook/.pub-cache/hosted/pub.dev/args-2.7.0",
       "packageUri": "lib/",
@@ -254,6 +260,18 @@
       "languageVersion": "3.8"
     },
     {
+      "name": "google_mlkit_commons",
+      "rootUri": "file:///Users/macbook/.pub-cache/hosted/pub.dev/google_mlkit_commons-0.11.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "google_mlkit_text_recognition",
+      "rootUri": "file:///Users/macbook/.pub-cache/hosted/pub.dev/google_mlkit_text_recognition-0.15.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
       "name": "http",
       "rootUri": "file:///Users/macbook/.pub-cache/hosted/pub.dev/http-1.6.0",
       "packageUri": "lib/",
@@ -264,6 +282,12 @@
       "rootUri": "file:///Users/macbook/.pub-cache/hosted/pub.dev/http_parser-4.1.2",
       "packageUri": "lib/",
       "languageVersion": "3.4"
+    },
+    {
+      "name": "image",
+      "rootUri": "file:///Users/macbook/.pub-cache/hosted/pub.dev/image-4.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "image_picker",
@@ -442,6 +466,12 @@
     {
       "name": "plugin_platform_interface",
       "rootUri": "file:///Users/macbook/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "posix",
+      "rootUri": "file:///Users/macbook/.pub-cache/hosted/pub.dev/posix-6.5.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },

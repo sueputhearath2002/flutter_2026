@@ -1,3 +1,4 @@
+import 'package:basic_flutter/UI/khmer_ocr_page.dart';
 import 'package:basic_flutter/UI/main/crud_firebase/get_user_screen.dart';
 import 'package:basic_flutter/constant/color.dart';
 import 'package:basic_flutter/detail_screen.dart';
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(backgroundColor: whiteColor),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: GetUserScreen(),
+      home: KhmerOcrPage(),
+      // GetUserScreen(),
       // FetchApiPagination(),
       // FetchApiScreen(),
       // StarterScreen(),
